@@ -1,14 +1,7 @@
-/* bands */
-
 .bands-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 50px;
-}
-
-.bands-grid a {
-  border: none;
-  display: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
 .bands-grid-item {
@@ -17,6 +10,25 @@
   border-radius: 10px;
   position: relative;
   min-height: 600px;
+  padding: 0;
+  margin: 20px;
+}
+
+@supports (display: grid) {
+  .bands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 50px;
+  }
+
+  .bands-grid-item {
+    margin: 0;
+  }
+}
+
+.bands-grid a {
+  border: none;
+  display: inherit;
 }
 
 .bands-grid-item img {

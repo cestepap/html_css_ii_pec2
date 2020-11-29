@@ -1,10 +1,10 @@
-@import "./variables/colors.scss";
-@import "./functions/functions.scss";
-@import "./layout/common.scss";
-@import "./pages/index.scss";
-@import "./pages/article.scss";
-@import "./pages/bands.scss";
-@import "./pages/contact.scss";
+@import "./variables/_colors.scss";
+@import "./functions/_functions.scss";
+@import "./layout/_common.scss";
+@import "./pages/_index.scss";
+@import "./pages/_article.scss";
+@import "./pages/_bands.scss";
+@import "./pages/_contact";
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 * {
@@ -33,7 +33,7 @@ h4,
 h5,
 h6 {
   font-family: "Roboto", sans-serif;
-  color: $h1h2-color;
+  color: $main-color;
   margin: 0;
   word-break: break-word;
   text-align: center;
@@ -66,17 +66,19 @@ p {
 }
 
 a {
-  color: $h1h2-color;
-  text-decoration: none;
-}
-
-a:hover {
-  transition: color 0.5s ease-out;
   color: $main-color;
+  text-decoration: none;
+
+  & a:hover {
+    transition: color 0.5s ease-out;
+    color: $main-color;
+  }
 }
 
-.grow:hover {
-  transform: scale(1.1);
+.grow {
+  & .grow:hover {
+    transform: scale(1.1);
+  }
 }
 
 @media all and (max-width: 800px) {
