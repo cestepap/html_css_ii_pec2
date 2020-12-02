@@ -1,3 +1,5 @@
+@import "./variables/_colors.scss";
+
 .container-article {
   background: #1f1f1f;
 }
@@ -23,6 +25,21 @@
 .article-list-item {
   list-style: disc;
   margin-left: 20px;
+}
+
+.article-quotes {
+  padding: 40px;
+}
+
+.article-quotes p {
+  font-size: 1.5em;
+  color: $main-color;
+}
+
+.article-quotes blockquote {
+  font-style: italic;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .section-heading {

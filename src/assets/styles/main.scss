@@ -1,4 +1,5 @@
 @import "./variables/_colors.scss";
+@import "./variables/_variables.scss";
 @import "./functions/_functions.scss";
 @import "./layout/_common.scss";
 @import "./pages/_index.scss";
@@ -6,6 +7,7 @@
 @import "./pages/_bands.scss";
 @import "./pages/_contact";
 @import "@fortawesome/fontawesome-free/css/all.css";
+@import "~bootstrap/scss/bootstrap.scss";
 
 * {
   box-sizing: border-box;
@@ -72,6 +74,8 @@ a {
   & a:hover {
     transition: color 0.5s ease-out;
     color: $main-color;
+    text-decoration: none !important;
+    border: none;
   }
 }
 
