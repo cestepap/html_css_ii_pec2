@@ -94,3 +94,10 @@ figcaption {
   font-size: 1rem;
   margin: 0 auto;
 }
+
+@media all and (max-width: 800px) {
+  .container-principal,
+  .container-images {
+    padding: 10px;
+  }
+}

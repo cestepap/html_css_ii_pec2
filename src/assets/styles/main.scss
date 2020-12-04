@@ -1,3 +1,4 @@
+@import "~bootstrap/scss/bootstrap.scss";
 @import "./variables/_colors.scss";
 @import "./variables/_variables.scss";
 @import "./functions/_functions.scss";
@@ -7,7 +8,6 @@
 @import "./pages/_bands.scss";
 @import "./pages/_contact";
 @import "@fortawesome/fontawesome-free/css/all.css";
-@import "~bootstrap/scss/bootstrap.scss";
 
 * {
   box-sizing: border-box;
@@ -70,24 +70,14 @@ p {
 a {
   color: $main-color;
   text-decoration: none;
+}
 
-  & a:hover {
-    transition: color 0.5s ease-out;
-    color: $main-color;
-    text-decoration: none !important;
-    border: none;
-  }
+a:hover {
+  color: $hover-color;
 }
 
 .grow {
   & .grow:hover {
     transform: scale(1.1);
-  }
-}
-
-@media all and (max-width: 800px) {
-  .container-principal,
-  .container-images {
-    padding: 10px;
   }
 }
