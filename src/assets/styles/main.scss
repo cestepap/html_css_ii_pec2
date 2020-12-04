@@ -70,10 +70,12 @@ p {
 a {
   color: $main-color;
   text-decoration: none;
-}
 
-a:hover {
-  color: $hover-color;
+  & a:hover {
+    transition: color 0.5 ease-out;
+    color: $hover-color;
+    text-decoration: none !important;
+  }
 }
 
 .grow {
